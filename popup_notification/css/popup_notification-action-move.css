@@ -1,0 +1,40 @@
+/*
+ * bottom_right
+ */
+.popup_notification-position-bottom_right.popup_notification-container {
+    padding-top: 0;
+}
+
+.popup_notification-position-bottom_right.popup_notification-action {
+    bottom: 0;
+    right: 0;
+    transform: translateX(110%);
+    transition: transform .5s cubic-bezier(0.23, 1, 0.32, 1), bottom .5s;
+}
+
+.popup_notification-position-bottom_right.popup_notification-show {
+    transform: translateX(0);
+}
+
+/*
+ * top
+ */
+.popup_notification-position-top.popup_notification-container {
+    display: flex;
+    padding-bottom: 0;
+}
+
+.popup_notification-position-top.popup_notification-action {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-110%);
+    transition: transform .5s cubic-bezier(0.23, 1, 0.32, 1), top .5s;
+}
+
+.popup_notification-position-top.popup_notification-show {
+    transform: translateX(-50%) translateY(0);
+}
+
+.popup_notification-position-top.popup_notification-remove {
+    top: 0 !important;
+}

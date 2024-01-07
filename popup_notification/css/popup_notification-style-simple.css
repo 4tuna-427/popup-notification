@@ -1,0 +1,71 @@
+.popup_notification-container {
+    position: fixed;
+    padding: 1.5rem;
+}
+
+.popup_notification-window {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.popup_notification-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.popup_notification-message {
+    margin-right: 1rem;
+}
+
+.popup_notification-closer {
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./img/xmark-solid.svg");
+    cursor: pointer;
+}
+
+.popup_notification-type-info .popup_notification-window {
+    background-color: #44a1bc;
+    color: #fff;
+}
+
+.popup_notification-type-info .popup_notification-icon {
+    background-image: url("./img/circle-info-solid.svg");
+}
+
+.popup_notification-type-success .popup_notification-window {
+    background-color: #62ab62;
+    color: #fff;
+}
+
+.popup_notification-type-success .popup_notification-icon {
+    background-image: url("./img/check-solid.svg");
+}
+
+.popup_notification-type-error .popup_notification-window {
+    background-color: #C34943;
+    color: #fff;
+}
+
+.popup_notification-type-error .popup_notification-icon {
+    background-image: url("./img/circle-xmark-regular.svg");
+}
+
+.popup_notification-type-warning .popup_notification-window {
+    background-color: #f89e1e;
+    color: #fff;
+}
+
+.popup_notification-type-warning .popup_notification-icon {
+    background-image: url("./img/triangle-exclamation-solid.svg");
+}

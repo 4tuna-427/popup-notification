@@ -1,0 +1,69 @@
+.popup_notification-container {
+    position: fixed;
+    padding: 1.5rem;
+}
+
+.popup_notification-window {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    padding: 1rem;
+    background-color: #fff;
+    border-left: 4px solid transparent;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.popup_notification-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 1rem;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.popup_notification-message {
+    margin-right: 1rem;
+}
+
+.popup_notification-closer {
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2216%22%20width%3D%2212%22%20viewBox%3D%220%200%20384%20512%22%3E%3C!--!Font%20Awesome%20Free%206.5.1%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202023%20Fonticons%2C%20Inc.--%3E%3Cpath%20opacity%3D%221%22%20fill%3D%22%23c0c0c0%22%20d%3D%22M342.6%20150.6c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L192%20210.7%2086.6%20105.4c-12.5-12.5-32.8-12.5-45.3%200s-12.5%2032.8%200%2045.3L146.7%20256%2041.4%20361.4c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200L192%20301.3%20297.4%20406.6c12.5%2012.5%2032.8%2012.5%2045.3%200s12.5-32.8%200-45.3L237.3%20256%20342.6%20150.6z%22%2F%3E%3C%2Fsvg%3E');
+    cursor: pointer;
+}
+
+.popup_notification-type-info .popup_notification-window {
+    border-color: #44a1bc;
+}
+
+.popup_notification-type-info .popup_notification-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2216%22%20width%3D%2216%22%20viewBox%3D%220%200%20512%20512%22%3E%3C!--!Font%20Awesome%20Free%206.5.1%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202023%20Fonticons%2C%20Inc.--%3E%3Cpath%20opacity%3D%221%22%20fill%3D%22%2344a1bc%22%20d%3D%22M256%20512A256%20256%200%201%200%20256%200a256%20256%200%201%200%200%20512zM216%20336h24V272H216c-13.3%200-24-10.7-24-24s10.7-24%2024-24h48c13.3%200%2024%2010.7%2024%2024v88h8c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024H216c-13.3%200-24-10.7-24-24s10.7-24%2024-24zm40-208a32%2032%200%201%201%200%2064%2032%2032%200%201%201%200-64z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.popup_notification-type-success .popup_notification-window {
+    border-color: #62ab62;
+}
+
+.popup_notification-type-success .popup_notification-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2216%22%20width%3D%2214%22%20viewBox%3D%220%200%20448%20512%22%3E%3C!--!Font%20Awesome%20Free%206.5.1%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202023%20Fonticons%2C%20Inc.--%3E%3Cpath%20opacity%3D%221%22%20fill%3D%22%2362ab62%22%20d%3D%22M438.6%20105.4c12.5%2012.5%2012.5%2032.8%200%2045.3l-256%20256c-12.5%2012.5-32.8%2012.5-45.3%200l-128-128c-12.5-12.5-12.5-32.8%200-45.3s32.8-12.5%2045.3%200L160%20338.7%20393.4%20105.4c12.5-12.5%2032.8-12.5%2045.3%200z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.popup_notification-type-error .popup_notification-window {
+    border-color: #c34943;
+}
+
+.popup_notification-type-error .popup_notification-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2216%22%20width%3D%2216%22%20viewBox%3D%220%200%20512%20512%22%3E%3C!--!Font%20Awesome%20Free%206.5.1%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202023%20Fonticons%2C%20Inc.--%3E%3Cpath%20opacity%3D%221%22%20fill%3D%22%23c34943%22%20d%3D%22M256%2048a208%20208%200%201%201%200%20416%20208%20208%200%201%201%200-416zm0%20464A256%20256%200%201%200%20256%200a256%20256%200%201%200%200%20512zM175%20175c-9.4%209.4-9.4%2024.6%200%2033.9l47%2047-47%2047c-9.4%209.4-9.4%2024.6%200%2033.9s24.6%209.4%2033.9%200l47-47%2047%2047c9.4%209.4%2024.6%209.4%2033.9%200s9.4-24.6%200-33.9l-47-47%2047-47c9.4-9.4%209.4-24.6%200-33.9s-24.6-9.4-33.9%200l-47%2047-47-47c-9.4-9.4-24.6-9.4-33.9%200z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.popup_notification-type-warning .popup_notification-window {
+    border-color: #f89e1e;
+}
+
+.popup_notification-type-warning .popup_notification-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2216%22%20width%3D%2216%22%20viewBox%3D%220%200%20512%20512%22%3E%3C!--!Font%20Awesome%20Free%206.5.1%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202023%20Fonticons%2C%20Inc.--%3E%3Cpath%20opacity%3D%221%22%20fill%3D%22%23f89e1e%22%20d%3D%22M256%2032c14.2%200%2027.3%207.5%2034.5%2019.8l216%20368c7.3%2012.4%207.3%2027.7%20.2%2040.1S486.3%20480%20472%20480H40c-14.3%200-27.6-7.7-34.7-20.1s-7-27.8%20.2-40.1l216-368C228.7%2039.5%20241.8%2032%20256%2032zm0%20128c-13.3%200-24%2010.7-24%2024V296c0%2013.3%2010.7%2024%2024%2024s24-10.7%2024-24V184c0-13.3-10.7-24-24-24zm32%20224a32%2032%200%201%200%20-64%200%2032%2032%200%201%200%2064%200z%22%2F%3E%3C%2Fsvg%3E');
+}
